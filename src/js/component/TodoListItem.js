@@ -4,13 +4,13 @@ export function TodoListItem(props) {
 	return (
 		<>
 			<li>
-				{props.item}
+				{props.name}
 				<button
 					onClick={() => {
 						props.onCheck(props.id);
 					}}
 					className="delete-item-button">
-					x
+					&times;
 				</button>
 			</li>
 		</>
